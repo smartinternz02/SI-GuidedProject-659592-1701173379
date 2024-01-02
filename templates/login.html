@@ -1,31 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="styles/styles.css"> <!-- Include your CSS file here -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login Page</title>
+
+
 </head>
 <body>
-    <header>
-        <h1>Login</h1>
-    </header>
+	<h1>Please Enter the Username and Password</h1>
+<form action = "submit", method = "post">
+    <label>Email ID:</label>
+	<input type="email" name="Email" required = "" placeholder="Enter the Email">
+<br>
+<br>
+    <label>Password:</label>
+    <input type="Password" name="Password" required ="" placeholder="Please Enter Password"><br>
+    <br>
     
-    <section class="login-form">
-        <h2>Login</h2>
-        <form action="{{ url_for('login')}}" method="post">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br><br>
-            
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required><br><br>
-            
-            <button type="submit">Login</button>
-        </form>
-    </section>
-
-    <footer>
-        <p>&copy; 2023 College Name</p>
-    </footer>
+    <button>Submit</button>
+</form>
+{{UserInformation}}
 </body>
 </html>
